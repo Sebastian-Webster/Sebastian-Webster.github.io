@@ -134,4 +134,28 @@ a {
     .productItem p:first-child {
         font-size: 20pt;
     }
+    #aboutMeCol2 {
+        font-size: 14pt;
+    }
+    #aboutMeCol1 h2 {
+        font-size: 18pt;
+    }
+    #aboutMeCol1 i {
+        font-size: 18pt;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    /* For mobile phones: */
+    #aboutMeCol2 {
+        font-size: 18pt;
+    }
+    #aboutMeCol1 h2 {
+        font-size: 22pt;
+    }
+    #aboutMeCol1 i {
+        font-size: 22pt;
+    }
+    h3 {
+        font-size: 24pt;
+    }
 }
