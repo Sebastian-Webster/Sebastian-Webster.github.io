@@ -1,0 +1,137 @@
+:root {
+    --variable-name: variable-value;
+}
+header {
+    text-align: center;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.productItem {
+    width: calc(100% / 3);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    color: white;
+}
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.SocialSquare {
+    background-image: url(https://github.com/SquareTable/social-media-platform/raw/main/assets/NewLogo.png);
+}
+.goToGitHub {
+    background-color: green;
+    color: white;
+    padding: 6px 10px 6px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.goToGitHub:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    opacity: 0.9
+}
+.comingSoonButton {
+    background-color: gray;
+}
+.comingSoonProduct {
+    background-color: black;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#devIncDiceGenerator {
+    background-image: url(FIND-DICE-IMAGE);
+}
+#aboutMe {
+    background-color: #1fb355;
+    padding: 100px 10px 100px 10px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+#aboutMeCol1 {
+    color: white;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#aboutMeCol2 {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#aboutMeCol3 {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.circleImage {
+    border-radius: 1000px;
+    aspect-ratio: 1;
+}
+
+@media only screen and (max-width: 750px) {
+    /* For mobile phones: */
+    .productItem {
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+        border-radius: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .productItem p:first-child {
+        font-size: 16pt;
+    }
+    .productsContainer {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 950px) and (min-width: 751px) {
+    /* For mobile phones: */
+    h3 {
+        font-size: 18pt;
+    }
+    .productItem p:first-child {
+        font-size: 14pt;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 950px) {
+    /* For mobile phones: */
+    p {
+        font-size: 14pt;
+    }
+    h3 {
+        font-size: 24pt;
+    }
+    .productItem p:first-child {
+        font-size: 20pt;
+    }
+}
