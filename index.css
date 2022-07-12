@@ -4,9 +4,10 @@
 header {
     text-align: center;
 }
-body {
+body, html {
     margin: 0px;
     padding: 0px;
+    height: 100%;
 }
 .productItem {
     width: calc(100% / 3);
@@ -40,15 +41,16 @@ p {
 .goToGitHub {
     background-color: green;
     color: white;
-    padding: 6px 10px 6px 10px;
+    padding: 20px 30px 20px 30px;
     border: 1px solid black;
     border-radius: 10px;
     margin-bottom: 10px;
+    font-size: 24pt;
+    font-family: 'Roboto', sans-serif;
 }
 .goToGitHub:hover {
     cursor: pointer;
     transform: scale(1.025);
-    opacity: 0.9
 }
 .comingSoonButton {
     background-color: gray;
@@ -97,6 +99,41 @@ a {
     border-radius: 1000px;
     aspect-ratio: 1;
 }
+.parallax {
+    height: 120%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.parallax > p {
+    color: white;
+    font-size: 20pt;
+    text-shadow: 0px 0px 20px black, 0 0 1em black, 0 0 0.2em black, 0 0 3em black;
+}
+#socialSquareMobileParallax {
+    background-image: url(images/SocialSquareMobile.png);
+}
+#socialSquareBackendParallax {
+    background-image: url(images/carbon.png);
+}
+#socialSquareDesktopParallax {
+    background-image: url(images/SocialSquareDesktop.png);
+    background-size: contain;
+}
+#devIncDiceGeneratorParallax {
+    background-image: url(images/devIncDiceGenerator.png);
+}
+#devIncDiceGeneratorParallax > p {
+    color: black;
+    text-shadow: 0px 0px 20px white, 0 0 1em white, 0 0 0.2em white, 0 0 3em white;
+}
 
 @media only screen and (max-width: 750px) {
     /* For mobile phones: */
@@ -115,7 +152,6 @@ a {
     }
 }
 @media only screen and (max-width: 950px) and (min-width: 751px) {
-    /* For mobile phones: */
     h3 {
         font-size: 18pt;
     }
@@ -124,7 +160,6 @@ a {
     }
 }
 @media only screen and (max-width: 1200px) and (min-width: 950px) {
-    /* For mobile phones: */
     p {
         font-size: 14pt;
     }
@@ -145,7 +180,6 @@ a {
     }
 }
 @media only screen and (min-width: 1201px) {
-    /* For mobile phones: */
     #aboutMeCol2 {
         font-size: 18pt;
     }
